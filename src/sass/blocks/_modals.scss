@@ -1,0 +1,308 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.modal-block {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  width: 620px;
+  padding: 89px 77px 50px;
+  -webkit-animation-name: modal-hidden;
+  animation-name: modal-hidden;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes modal-hidden {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+  }
+}
+.modal.open .modal-block {
+  -webkit-animation-name: modal-open;
+  animation-name: modal-open;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  right: 0;
+  transition: 0.5s;
+}
+@keyframes modal-open {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+.modal-block .title-md {
+  margin-bottom: 30px;
+}
+.modal-text {
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.close-modal {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  right: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.close-modal:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.close-modal::before,
+.close-modal::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 2px;
+  height: 44px;
+  background: #000000;
+}
+.close-modal::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+}
+.form .label {
+  width: 356px;
+  height: 48px;
+  margin-bottom: 32px;
+  display: block;
+}
+.form .input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding-left: 16px;
+  padding-right: 40px;
+  outline: none;
+}
+.form .placeholder-input {
+  color: #000000;
+  left: 16px;
+}
+.clear-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.input.is-active ~ .clear-input {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.form .input.is-active ~ .placeholder-input {
+  font-size: 12px;
+  line-height: 22px;
+  color: #5b5b5b;
+  opacity: 1;
+  top: -25%;
+  left: 0;
+}
+.parsley-errors-list {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #cb2424;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: -23px;
+}
+.parsley-error ~ .placeholder-input {
+  display: none;
+}
+.form .input.parsley-error {
+  border: 1px solid #cb2424;
+  transition: 0.3s;
+}
+.data-span {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.5;
+}
+.data-span a {
+  color: #000000;
+}
+.check-data {
+  display: none;
+}
+.checkbox-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.checkbox-data::before {
+  content: url(../img/cheker.svg);
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.check-data:checked ~ .checkbox-data::before {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.chek__label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.check-inner {
+  margin-right: 8px;
+}
+.data-span__link:hover {
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+.form-modal .btn-2 {
+  width: 356px;
+}
+.form-modal .chek__label {
+  margin-top: 20px;
+}
+.check-inner.parsley-error ~ .parsley-errors-list {
+  top: -19px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.496476);
+  z-index: -1;
+  -webkit-animation-name: overlay-hidden;
+  animation-name: overlay-hidden;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overlay-hidden {
+  0% {
+    opacity: 0.65;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.modal.open .overlay {
+  -webkit-animation-name: overlay-open;
+  animation-name: overlay-open;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes overlay-open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.65;
+  }
+}
+.modal-tariffs .label {
+  margin-bottom: 10px;
+}
+.modal-tariffs .select-sort {
+  width: 356px;
+}
+.opetator-box {
+  display: flex;
+  margin-bottom: 15px;
+}
+.operator-letter {
+  display: flex;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+  margin-right: 27px;
+}
+.opetator-autocomplete::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.opetator-autocomplete {
+  margin-top: 23px;
+  overflow: auto;
+  height: 51vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.opetator-list {
+  list-style: none;
+}
+.opetator-item {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-top: 10px;
+}
+.opetator-item:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}

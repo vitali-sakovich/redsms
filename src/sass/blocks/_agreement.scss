@@ -1,0 +1,28 @@
+.content_agreement {
+  padding: 33px 8.3% 55px 21%;
+  position: relative;
+}
+.agreement-text {
+  max-width: 646px;
+  text-decoration: none;
+}
+.agreement-text p {
+  display: block;
+  margin-bottom: 20px;
+}
+.content_agreement::before {
+  content: '';
+  position: absolute;
+  top: 43px;
+  left: 8.3%;
+  width: 8.438vw;
+  height: 4px;
+  background: #d8d8d8;
+}
+.agreement-text a {
+  text-decoration: none;
+  color: #000;
+}
+.agreement-text a:hover{
+  text-decoration: underline;
+}

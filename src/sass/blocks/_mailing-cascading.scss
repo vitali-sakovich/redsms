@@ -1,0 +1,135 @@
+.header_mailing-cascading .title-block .title {
+  max-width: 215px;
+}
+.mailing_cascading .first-screen__text {
+  max-width: 350px;
+}
+.mailing_cascading .first-screen__img-air {
+  display: none;
+}
+.mailing_cascading .first-screen__img-phone {
+  right: 17.344vw;
+}
+.how-works_examp {
+  align-items: flex-start;
+  padding-top: 120px;
+  padding-bottom: 137px;
+}
+.how-works_examp .how-works__container {
+  margin-right: 0;
+}
+.how-works_examp .how-works__block {
+  margin-left: 0;
+}
+.how-works_examp .how-works__content {
+  display: flex;
+  padding-top: 0;
+  max-width: 100%;
+}
+.how-works_examp .title-md {
+  margin-bottom: 0;
+  max-width: 218px;
+  margin-right: 100px;
+}
+.mailing-example {
+  margin-top: 85px;
+}
+.mailing-example .text-md {
+  display: block;
+  margin-bottom: 19px;
+}
+.mailing-example__block {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.mailing-example__img {
+  width: calc(100% / 4 - 51px);
+  margin-right: 68px;
+}
+.mailing-example__img:nth-child(4n) {
+  margin-right: 0;
+}
+.mailing-example__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.service-benefits__desc {
+  display: flex;
+  margin-top: 60px;
+  padding-left: 64px;
+}
+.service-benefits__desc-img {
+  margin-right: 53px;
+}
+.service-benefits__desc-text {
+  display: flex;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  width: 52.813vw;
+  min-width: 676px;
+}
+.mailing_cascading .service-benefits {
+  padding-bottom: 160px;
+}
+.example-cascading {
+  padding-bottom: 140px;
+}
+.example-cascading__header {
+  display: flex;
+  margin-bottom: 112px;
+}
+.example-cascading__header .title-md {
+  max-width: 517px;
+  margin-right: 123px;
+}
+.example-cascading__header .text-md {
+  min-width: 325px;
+  max-width: 25.391vw;
+}
+.example-cascading__block {
+  display: flex;
+  justify-content: center;
+}
+.example-cascading__img {
+  position: relative;
+  margin-right: 110px;
+}
+.example-cascading__img:not(:last-child)::before {
+  content: '';
+  background: url('../img/arrow-example-cascading.svg');
+  position: absolute;
+  top: -29px;
+  right: -114px;
+  width: 95px;
+  height: 25px;
+}
+.example-cascading__img:nth-child(3) {
+  margin-top: -12px;
+}
+.example-cascading__img:last-child {
+  margin-right: 50px;
+}
+.example-cascading__img:nth-child(3)::before {
+  top: -17px;
+}
+.get-started.bg-gray .get-started__list {
+  background: url('../img/get-started-bg-white.svg');
+  background-size: 100% 100%;
+}
+.get-started.bg-gray {
+  padding-top: 66px;
+  padding-bottom: 61px;
+}
+.mailing_cascading .advantage {
+  padding-top: 120px;
+}
+.mailing_cascading .calculator {
+  padding-bottom: 180px;
+}
+.how-works_examp .how-works__container {
+  width: 100%;
+}

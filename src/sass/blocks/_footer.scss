@@ -1,0 +1,137 @@
+.footer {
+  background: #f6f6f6;
+  padding: 73px 128px 18px 8.3%;
+  position: relative;
+}
+.footer-nav {
+  display: flex;
+  margin-bottom: 40px;
+}
+.footer-nav__name {
+  display: flex;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.footer-nav__list {
+  list-style: none;
+}
+.footer-nav__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  padding: 5px 0;
+  transition: opacity 0.3s;
+}
+.footer-nav__link:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.footer-nav__item {
+  margin: 15px 0;
+}
+.footer-nav__col:nth-child(1) {
+  margin-right: 7.813vw;
+}
+.footer-nav__col:nth-child(2) {
+  margin-right: 10.938vw;
+}
+.footer-nav__col:nth-child(3) {
+  margin-right: 8.906vw;
+}
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.footer-contacts__text {
+  display: flex;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  margin-right: 21px;
+}
+.footer-contact {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  margin-right: 30px;
+  transition: opacity 0.3s;
+}
+.footer-contact:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.footer-contact img {
+  margin-right: 7px;
+}
+.footer-contact:last-child img {
+  margin-bottom: -3px;
+  margin-right: 12px;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.copyright {
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #5e5e5e;
+}
+.developers {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #246aaa;
+  transition: opacity 0.3s;
+}
+.developers:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.developers span {
+  display: flex;
+  margin-right: 5px;
+}
+.footer-link {
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #5e5e5e;
+  transition: opacity 0.3s;
+  text-decoration: none;
+  margin-right: 42px;
+}
+.footer-link:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.footer-bottom {
+  display: flex;
+}
+.btn-up {
+  padding: 0 20px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  cursor: pointer;
+}
+.footer-contacts__inner {
+  display: flex;
+}

@@ -1,0 +1,394 @@
+.content_about {
+  padding-top: 35px;
+}
+.about-first-screen {
+  display: flex;
+  justify-content: space-between;
+}
+.about-first-screen__desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  max-width: 23.594vw;
+}
+.about-first-screen__info {
+  position: relative;
+  margin-top: -102px;
+  height: 512px;
+  overflow: hidden;
+}
+.about-first-screen__info-text {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, #f6e4e4 0%, #ffffff 100%);
+  box-shadow: 2px 2px 2px rgba(139, 0, 11, 0.328644),
+    9px 5px 12px rgba(79, 0, 0, 0.384588);
+  border-radius: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.about-first-screen__info img {
+  z-index: -1;
+}
+.about-first-screen__info-text1 {
+  max-width: 413px;
+  padding: 15px 49px 15px 26px;
+  top: 184px;
+  left: 97px;
+}
+.about-first-screen__info-text2 {
+  max-width: 363px;
+  top: 319px;
+  left: 97px;
+  padding: 14px 33px 18px 26px;
+}
+.about-first-screen__info-text2::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  width: 56px;
+  height: 42px;
+  background: url('../img/Triangle.svg') no-repeat;
+}
+.our-values {
+  padding-top: 81px;
+  padding-bottom: 30px;
+  background: $red;
+}
+.our-values__conatiner {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 45px;
+}
+.our-values__box {
+  display: flex;
+  margin-right: 74px;
+  margin-bottom: 70px;
+  width: calc(100% / 2 - 56px);
+}
+.our-values__box:nth-child(2n) {
+  margin-right: 0;
+}
+.our-values__img {
+  width: 115px;
+  min-width: 115px;
+  margin-right: 32px;
+}
+.our-values__box .text-md {
+  max-width: 330px;
+}
+.about-operators {
+  padding-top: 96px;
+  padding-bottom: 100px;
+}
+.about-operators__header {
+  display: flex;
+  margin-bottom: 60px;
+}
+.about-operators__header .title-md {
+  max-width: 215px;
+  margin-right: 104px;
+}
+.about-operators__header .text-md {
+  max-width: 534px;
+}
+.about-operators__container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.about-operator__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 6 - 42px);
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.about-operator__box:nth-child(6n) {
+  margin-right: 0;
+}
+.about-operator__img {
+  display: flex;
+  width: 97px;
+  height: 138px;
+  box-shadow: 0px 12px 29px -6px rgba(118, 43, 43, 0.265734);
+  margin-bottom: 35px;
+}
+.about-operator__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-operator__logo {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+}
+.licenses {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  position: relative;
+}
+.licenses::before,
+.reviews_plane::before {
+  content: '';
+  height: 44.1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: url('../img/airplane-line.svg');
+  top: -34px;
+  z-index: -1;
+}
+.licenses__header {
+  display: flex;
+  margin-bottom: 40px;
+}
+.licenses__header .title-md {
+  margin-right: 154px;
+}
+.licenses__header .text-md {
+  display: flex;
+  max-width: 534px;
+}
+.licenses-slider {
+  display: flex;
+  overflow: hidden;
+}
+.licenses-slider__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 107px;
+  min-width: 107px;
+  height: 130px;
+  background: #fff;
+  border: 1px solid #cacaca;
+  border-left: none;
+  cursor: pointer;
+}
+.licenses-slider__prev {
+  border-top: none;
+}
+.licenses-slider__prev img {
+  transform: rotate(180deg);
+}
+.licenses-slide {
+  display: flex !important;
+  width: 480px;
+  height: 260px;
+  border: 1px solid #cacaca;
+  padding: 49px 24px 0 42px;
+  border-left: none;
+}
+.licenses-slide__img {
+  display: flex;
+  box-shadow: 0px 33px 43px -19px rgba(0, 0, 0, 0.307665);
+  width: 97px;
+  min-width: 97px;
+  height: 134px;
+  margin-right: 35px;
+}
+.licenses-slide__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.requisites {
+  padding-top: 114px;
+  padding-bottom: 150px;
+}
+.requisites__conatiner {
+  display: flex;
+  margin-top: 40px;
+}
+.requisite {
+  display: flex;
+  margin-bottom: 30px;
+}
+.requisites__list {
+  margin-right: 5.469vw;
+}
+.requisite__name {
+  display: flex;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  min-width: 175px;
+  margin-right: 38px;
+}
+.requisite__value {
+  display: flex;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  max-width: 25vw;
+  min-width: 320px;
+  text-decoration: none;
+}
+.contract__title {
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.contract {
+  padding: 36px 37px 52px 35px;
+  border: 1px solid #cacaca;
+  margin-bottom: 45px;
+}
+.download {
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+}
+.download__icon {
+  margin-right: 23px;
+}
+.download__text {
+  display: flex;
+  flex-direction: column;
+}
+.download__name {
+  display: flex;
+  position: relative;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  padding-bottom: 9px;
+  margin-bottom: 5px;
+}
+.download__name::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #c2c2c2;
+}
+.download__size {
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+.check-company {
+  padding-left: 35px;
+  padding-right: 41px;
+}
+.check-company__title {
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 23px;
+}
+.check-company__btn {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 14px 19px;
+  border: 2px solid #d43d60;
+  border-radius: 3px;
+  transition: border 0.3s;
+}
+.check-company__btn:hover {
+  border: 2px solid #000;
+  transition: border 0.3s;
+}
+.reviews_plane {
+  position: relative;
+}
+.reviews_plane {
+  padding-top: 63px;
+}
+.in-touch {
+  padding-top: 120px;
+  overflow: hidden;
+}
+.in-touch__block {
+  display: flex;
+  margin-top: 50px;
+  position: relative;
+}
+.in-touch__block::before {
+  content: '';
+  position: absolute;
+  right: 101%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 50vw;
+  height: 138px;
+  background: url(../img/bg-airplanes-2.svg);
+  background-position: right;
+  z-index: -1;
+}
+.in-touch__block::after {
+  content: '';
+  position: absolute;
+  left: 67vw;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 50vw;
+  height: 138px;
+  background: url(../img/bg-airplanes-2.svg);
+  background-position: left;
+  z-index: -1;
+}
+.in-touch__link {
+  display: flex;
+  flex-direction: column;
+  width: 33.281vw;
+  min-width: 426px;
+  min-height: 137px;
+  background: #ffffff;
+  border: 1px solid #cacaca;
+  margin-left: -1px;
+  padding: 27px 107px 21px 24px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.in-touch__link-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 29px;
+}
+.in-touch__link-name {
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 17px;
+}
+.in-touch__link-text {
+  display: flex;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.content_about .first-screen__bg img {
+  margin-top: 0;
+}

@@ -1,0 +1,170 @@
+.nav-integrations {
+  display: flex;
+  border-bottom: 1px solid #8a8a8a;
+  margin-top: 35px;
+}
+.nav-integrations__link {
+  display: flex;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.nav-integrations__link::after {
+  content: '';
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #db3340;
+  transition: height 0.3s;
+}
+.nav-integrations__link:hover::after {
+  height: 4px;
+  transition: height 0.3s;
+}
+.nav-integrations__link.active {
+  cursor: default;
+}
+.nav-integrations__link.active::before {
+  content: '';
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background: #db3340;
+}
+.integrations__container {
+  display: flex;
+  padding-top: 46px;
+  padding-bottom: 88px;
+  background: #fff;
+}
+.integrations__nav .tab-btn {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  width: 183px;
+  height: 46px;
+  min-width: 183px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #db3340;
+  -webkit-clip-path: polygon(95% 0, 0 0, 0 100%, 95% 100%, 100% 50%);
+  clip-path: polygon(95% 0, 0 0, 0 100%, 95% 100%, 100% 50%);
+  cursor: pointer;
+}
+.integrations__nav .tab-btn.active {
+  background: linear-gradient(270deg, #e91b2a 0%, #fb5d69 100%);
+  color: #fff;
+  cursor: default;
+}
+
+.integrations__nav .tab-btn:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#e91b2a),
+    to(#c42a36)
+  );
+  background: -o-linear-gradient(left, #e91b2a 0%, #c42a36 100%);
+  background: linear-gradient(90deg, #e91b2a 0%, #c42a36 100%);
+  color: #fff;
+}
+.integrations__nav .tab-btn.active:hover {
+  background: linear-gradient(270deg, #e91b2a 0%, #fb5d69 100%);
+}
+.integrations__nav {
+  margin-right: 77px;
+}
+.integration-pane .title-sm {
+  padding-bottom: 20px;
+}
+.integration-pane .text-md,
+.integration-pane p {
+  margin-bottom: 30px;
+}
+.list {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.list .item {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.download-integration {
+  display: flex;
+  align-items: center;
+  padding: 36px 115px 36px 42px;
+  background: #f6f6f6;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  margin-top: 50px;
+}
+.download-integration img {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.integrations__content {
+  max-width: 700px;
+}
+.content_integrations .start-sending__wrapper {
+  margin-bottom: 0;
+}
+.content_integrations {
+  padding-bottom: 77px;
+}
+.integration-img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background: #c6cfd0;
+  padding: 10px;
+  max-width: 540px;
+  margin-bottom: 50px;
+}
+.integration-img img {
+  width: 100%;
+}
+.smpp-integrations {
+  background: #fff;
+}
+.smpp-integrations__container {
+  max-width: 700px;
+}
+.smpp-integrations {
+  padding-top: 47px;
+  padding-bottom: 50px;
+}
+.smpp-integrations .title-md {
+  margin-bottom: 33px;
+}
+.smpp-integrations .download-integration {
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+.smpp-integrations .text-md,
+.smpp-integrations p{
+  margin-bottom: 30px;
+}

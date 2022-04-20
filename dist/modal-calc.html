@@ -1,0 +1,29 @@
+<div class="modal modal-calc">
+  <div class="modal-block">
+    <div class="close-modal"></div>
+    <h6 class="title-md">
+      Оставьте свой номер телефона и мы подготовим для вас наиболее
+      выгодное предложение
+    </h6>
+    <form action="#" method="post" data-parsley-validate="" class="form form-modal">
+      <label class="label">
+        <input type="text" name="phone" data-parsley-required-message="Введите номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+        <span class="placeholder-input">Номер телефона *</span>
+        <span class="clear-input"><img src="../img/clear.svg" alt=""></span>
+      </label>
+      <button class="btn btn-2 last-elem" type="submit">
+        Перезвоните мне
+      </button>
+      <div class="chek__label">
+        <label class="check-inner">
+          <input type="checkbox" name="ch" data-parsley-required="true" required="" data-parsley-multiple="ch" data-parsley-required-message="Примите согласие на обработку персональных данных" checked="checked" class="check-data">
+          <span class="checkbox-data"></span>
+        </label>
+        <span class="data-span">Я даю свое
+          <a href="#" class="data-span__link">согласие на обработку персональных данных</a>
+        </span>
+      </div>
+    </form>
+  </div>
+  <div class="overlay"></div>
+</div>
